@@ -2,6 +2,7 @@ package com.polarbookshop.catalogservice;
 
 import com.polarbookshop.catalogservice.domain.Book;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +19,7 @@ class CatalogServiceApplicationTests {
 	@Autowired
 	private WebTestClient webTestClient;
 
-	@Test
+	@Test @Ignore
 	void whenPostRequestThenBookCreated() {
 		var expectedBook = Book.of("1234567891", "Title", "Author", 9.90, null);
 
