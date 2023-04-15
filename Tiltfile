@@ -3,7 +3,7 @@ custom_build(
     #Name of the container file
     ref = 'catalog-service',
     #Command to build the container image
-    command = './gradlew bootBuildImage --builder ghcr.io/thomasvitale/java-builder-arm64',
+    command = './gradlew bootBuildImage --imageName $EXPECTED_REF --builder ghcr.io/thomasvitale/java-builder-arm64',
     #Files to watch that trigger a new build
     deps = ['build.gradle', 'src']
 )
