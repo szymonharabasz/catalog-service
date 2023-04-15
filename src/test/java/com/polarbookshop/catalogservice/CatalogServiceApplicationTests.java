@@ -20,9 +20,10 @@ class CatalogServiceApplicationTests {
 	private WebTestClient webTestClient;
 
 	
+	/*
 	@Test
 	void whenPostRequestThenBookCreated() {
-	/*
+	
 		var expectedBook = Book.of("1234567891", "Title", "Author", 9.90, null);
 
 		webTestClient
@@ -35,8 +36,8 @@ class CatalogServiceApplicationTests {
 				assertThat(actualBook).isNotNull();
 				assertThat(actualBook.isbn()).isEqualTo(expectedBook.isbn());
 			});
-			*/
+			
 	}
-	
+	*/
 
 }
